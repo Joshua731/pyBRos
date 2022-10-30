@@ -21,8 +21,6 @@ def create_app():
         with application.app_context():
             db.drop_all()
             db.create_all()
-            # from util.crawler import get_data_from_rick_and_morty_apis
-            # get_data_from_rick_and_morty_apis(db)
 
     return application
 

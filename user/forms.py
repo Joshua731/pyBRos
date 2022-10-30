@@ -15,7 +15,4 @@ species = db.Column(db.String(20), nullable=True)
 class UserForm(FlaskForm):
     id = IntegerField("ID", validators=[DataRequired()])
     name = StringField("Nome do Usuário", validators=[DataRequired()])
-    # gender = StringField("Gênero")
-    # status = StringField("Status")
-    # species = StringField("Especie")
 
